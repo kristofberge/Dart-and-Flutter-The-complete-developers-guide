@@ -12,6 +12,7 @@ class _LoginScreenState extends State<LoginScreen>  with ValidationMixin{
   final formKey = GlobalKey<FormState>();
 
   String email, password;
+  bool keepMeLoggedIn;
 
   @override
   Widget build(context) {
@@ -26,6 +27,7 @@ class _LoginScreenState extends State<LoginScreen>  with ValidationMixin{
             passwordField(),
             Container(margin: const EdgeInsets.only(top: 25)),
             submitButton(),
+
           ],
         ),
       ),
